@@ -38,6 +38,7 @@ struct ContentView: View {
             .font(.title)
         }
       } //: ZSTACK
+      .navigationTitle("\(imageData[current].description)")
       .toolbar {
         ToolbarItem(placement: .navigationBarLeading) {
           Button(action: {
@@ -79,7 +80,7 @@ struct ContentView: View {
       } //: TOOLBAR
       
     } //: NAVIGATIONVIEW
-    .navigationTitle("Photos")
+    
     
     // SHOWSHEET
     .sheet(isPresented: $showSheet, content: {

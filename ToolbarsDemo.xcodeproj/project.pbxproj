@@ -18,7 +18,22 @@
 		C08215BC263188A100B4AD63 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08215B9263188A000B4AD63 /* image1.jpg */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8C4285A0264A6D75003625B8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8C42858F264A6D75003625B8 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		8C428591264A6D75003625B8 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		C082159C2631878E00B4AD63 /* ToolbarsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolbarsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C082159F2631878F00B4AD63 /* ToolbarsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarsDemoApp.swift; sourceTree = "<group>"; };
 		C08215A12631878F00B4AD63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C42858E264A6D75003625B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C42858F264A6D75003625B8 /* PhotosUI.framework */,
+				8C428591264A6D75003625B8 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C08215932631878E00B4AD63 = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +74,7 @@
 				C08215B7263188A000B4AD63 /* image2.jpg */,
 				C08215B8263188A000B4AD63 /* image3.jpg */,
 				C082159E2631878E00B4AD63 /* ToolbarsDemo */,
+				8C42858E264A6D75003625B8 /* Frameworks */,
 				C082159D2631878E00B4AD63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +119,7 @@
 				C08215982631878E00B4AD63 /* Sources */,
 				C08215992631878E00B4AD63 /* Frameworks */,
 				C082159A2631878E00B4AD63 /* Resources */,
+				8C4285A0264A6D75003625B8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -285,11 +311,12 @@
 		C08215AC2631879100B4AD63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ToolbarsDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BTCAVN99V;
+				DEVELOPMENT_TEAM = KWG6Y9B2W8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToolbarsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -307,11 +334,12 @@
 		C08215AD2631879100B4AD63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ToolbarsDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BTCAVN99V;
+				DEVELOPMENT_TEAM = KWG6Y9B2W8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToolbarsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
